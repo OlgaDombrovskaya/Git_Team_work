@@ -7,6 +7,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h1,
@@ -48,26 +49,32 @@ li {
   flex: 1;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 50px;
-  padding: 150px 50px 50px 50px;
+  align-items: center;
+  gap: 20px;
+  padding: 150px 20px 50px 20px;
 }
 
 .card {
-  overflow: auto;
+  /* overflow: auto; */
   display: block;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   max-width: 500px;
   padding: 20px;
   background: white;
   border: 2px solid black;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   margin: 0 auto;
-}
+  }
 
 .cardImage {
   float: left;
-  width: 150px;
-  height: auto;
+  width: 180px;
+  /* height: auto; */
+  height: 200px;
   object-fit: cover;
   border-radius: 8px;
   margin: 0 20px 20px 0;
@@ -84,8 +91,8 @@ h3 {
 }
 
 p {
-  font-size: 22px;
-  margin: 10px;
+  font-size: 14px;
+  margin: 5px;
 }
 
 footer {
@@ -99,4 +106,17 @@ footer {
   font-size: 20px;
   padding: 40px;
   color: rgb(69, 78, 108);
+}
+
+.hobbies {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.hobby-icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
 }
